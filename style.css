@@ -134,3 +134,8 @@ width: 400px;
     background-color: rgb(231, 203, 164);
     border-radius: 5px;
 }
+
+#counter_reset{
+    width:390px;
+    align-self: center;
+}
