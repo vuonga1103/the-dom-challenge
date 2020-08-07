@@ -1,0 +1,137 @@
+html{
+    background-color: #fee2b3;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.header{
+    margin-top: auto;
+    background-color: #1b262c;
+    padding:20px;
+    font-size: 28px;
+    color:white;
+}
+
+#counter{
+    
+    font-size: 200px;
+    padding: 90px;
+    width: 260px;
+    color:white;
+    background-color: #ed6663;
+    align-self: center;
+    text-align: center;
+    font-weight: 900;
+    border-color: cornsilk;
+    border: cornsilk solid 2rem;
+    border-radius: 50%;
+}
+
+button{
+    background-color:#bac964;
+    border: none;
+    outline: none;
+    padding:20px;
+    font-size: 20px;
+    color:white;
+}
+
+button:hover{
+    background-color:#d2df88;
+    cursor: pointer;
+}
+
+button:active{
+    background-color:#ebe37f;
+}
+
+button:disabled{
+    background-color:#adadab;
+}
+#pause{
+    padding:23px;
+    float:right;
+    background-color: #fa4252;
+    vertical-align: center;
+}
+.buttons{
+    align-self: center;
+    padding:20px;
+    width:350px;
+    background-color: #3f4441;
+    vertical-align: center;
+}
+.pauseplus{
+    float:left;
+}
+
+input[type="text"]{
+    width:280px;
+    height:50px;
+    border: none;
+    outline:none;
+    padding:5px;
+}
+
+.form_sub{
+    margin-top:auto;
+    display: flex;
+    justify-content: center;
+}
+
+#submit{
+    padding:10 20px;
+    font-size: 15px;
+    height:50px;
+}
+
+.comment_section{
+    align-self:center;
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+background-color: #3f4441;
+padding:0px;
+width: 400px;
+}
+
+.comment_section h3{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top:0px;
+    color:white;
+    background-color:#be3737;
+}
+.likes{
+    padding:20px;
+    align-self:center;
+    width:350px;
+    background-color: #f0d09a; 
+    font-size:20px;
+    color:#3f4441;
+    border:2px solid #e2be7e;
+    font-weight: 700;
+}
+
+.leave_comment h3{
+    background-color: #3f4441;
+    margin-bottom: 2px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.comments_c{
+    background-color: antiquewhite;
+    padding:30px;
+    margin-right: 12px;
+    margin-left: 12px;
+    border-radius: 5px;
+}
+.comments_c:nth-child(odd){
+    background-color: rgb(231, 203, 164);
+    border-radius: 5px;
+}

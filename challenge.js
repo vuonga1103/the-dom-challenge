@@ -88,11 +88,12 @@ commentForm.addEventListener("submit", evt => {
 
   let comment = evt.target["comment"].value;
   let newParagraph = document.createElement("p");
+  newParagraph.className="comments_c";
   newParagraph.innerText = comment;
-  let line = document.createElement("hr");
+
   
   commentDiv.append(newParagraph);
-  commentDiv.append(line);
+
 
   evt.target.reset();
 })
