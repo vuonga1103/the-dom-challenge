@@ -34,33 +34,24 @@ pauseButton.addEventListener("click", (evt) => {
   runGame = !runGame;
   if (runGame) {
     pauseButton.innerText = "pause";
-    enableAllButtons();
   } else {
     pauseButton.innerText = "resume";
-    disableAllButtons();
   }
+  changeButtonClickability();
 })
 
-function disableAllButtons() {
+function changeButtonClickability() {
+  // Helper function, will enable all buttons (except the pause button) if the buttons are disabled; will disable all buttons (except the pause button) if the buttons are enable
   let allButtons = document.querySelectorAll("button");
 
   for (let singleButton of allButtons) {
-    if (singleButton.id !== "pause") {
-      singleButton.setAttribute("disabled","false"); 
+    if (singleButton.id !== "pause" && singleButton.disabled) {
+      singleButton.removeAttribute("disabled");
+    } else if (singleButton.id !== "pause") {
+      singleButton.setAttribute("disabled", "true");
     }
   }
 }
-
-function enableAllButtons() {
-  let allButtons = document.querySelectorAll("button");
-
-  for (let singleButton of allButtons) {
-    if (singleButton.id !== "pause") {
-      singleButton.removeAttribute("disabled"); 
-    }
-  }
-}
-
 
 // As a user, i can manually increment and decrement the counter as i like
 minusButton.addEventListener("click", (evt) => {
