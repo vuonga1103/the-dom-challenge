@@ -82,8 +82,12 @@ commentForm.addEventListener("submit", evt => {
   newParagraph.innerText = comment;
   let line = document.createElement("hr");
   
-  commentDiv.append(newParagraph);
-  commentDiv.append(line);
+  if (comment.length > 0) {
+    commentDiv.append(newParagraph);
+    commentDiv.append(line); 
+  } else {
+    alert("Comment cannot be empty!")
+  }
 
   evt.target.reset();
 })
