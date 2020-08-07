@@ -11,10 +11,9 @@ body{
 
 .header{
     margin-top: auto;
-    background-color: #1b262c;
     padding:20px;
-    font-size: 28px;
-    color:white;
+    font-size: 50px;
+    color:black;
 }
 
 #counter{
